@@ -1,0 +1,80 @@
+.send-form{
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+    font-size: 2rem;
+    background: url('../images/contact-bg.jpg') left center no-repeat;
+    background-size: cover;
+    padding: 5rem 0;
+    overflow: hidden;
+    .container{
+        position: relative;
+        z-index: 2000;
+    }
+}
+.send-form__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.send-form__head{
+    font-weight: 100;
+    color: $theme-color-1!important;
+}
+.send-form__wrap{
+    width: 700px;
+}
+.send-form__group{
+    position: relative;
+}
+.send-form__input{
+    @extend %field;
+    height: 3rem;
+    border: 1px solid transparent;
+}
+.send-form__text{
+    @extend %field;
+    resize: none;
+    margin-bottom: 0;
+}
+.send-form__label{
+    display: none;
+}
+
+.send-form__btn{
+    font-size: 1.5rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $theme-color-1;
+    border: none;
+    background-color: rgb(194, 0, 39);
+    padding: 1.5rem 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    @include transition();
+    &:hover{
+        background-color: rgb(235, 0, 47);
+    }
+}
+.send-form_validate{
+    border: 1px solid red;
+}
+.send-form_pd{
+    font-size: 1.1rem;
+}
+.send-form__required{
+    &::after{
+        content: "*";
+        position: absolute;
+        top: -5px;
+        right: 0;
+        font-size: 1.5rem;
+        display: block;
+        color: #fff;
+    }
+}
+.send-form__policy{
+    color: #ffe667;
+    cursor: pointer;
+}

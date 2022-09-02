@@ -25,31 +25,6 @@ navListLinks.forEach(item => {
 })
 
 $(document).ready(function(){
-    //SLIDER
-    // $('.brands-wrap').slick({
-    //     arrows: false,
-    //     infinite: true,
-    //     slidesToShow: 3,
-    //     slidesToScroll: 3,
-    //     dots: true,
-    //     responsive: [
-    //         {
-    //             breakpoint: 768,
-    //             settings: {
-    //                 slidesToShow: 2,
-    //                 slidesToScroll: 2
-    //             }
-    //         },
-    //         {
-    //             breakpoint: 520,
-    //             settings: {
-    //                 slidesToShow: 1,
-    //                 slidesToScroll: 1
-    //             }
-    //         }
-    //     ]
-    //   });
-    // FIXED MENU
     $(window).scroll(function(){
         if($(this).scrollTop()>140){
             $('.header').addClass('header_fixed');

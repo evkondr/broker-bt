@@ -41,7 +41,7 @@
                         <li class="nav-list__item"><a href="/" class="nav-list__link">Главная</a></li>
                         <li class="nav-list__item"><a href="#about" class="nav-list__link">О проекте</a></li>
                         <li class="nav-list__item"><a href="#brands" class="nav-list__link">Бренды</a></li>
-                        <li class="nav-list__item"><a href="#contacts" class="nav-list__link">Контакты</a></li>
+                        <li class="nav-list__item"><a href="#send-form" class="nav-list__link">Подбор</a></li>
                     </ul>
                 </nav>
             </div>
@@ -138,47 +138,52 @@
             </div>
         </div>
     </section>
-    <!-- CONTACTS -->
-    <section class="contact" id="contacts">
+    <!-- SEND FORM -->
+    <section class="send-form" id="send-form">
         <div class="filter"></div>
+        <div class="container send-form__container">
+            <h3 class="section-head section-head__margin send-form__head">Подбор техники</h3>
+            <div class="send-form__wrap wow animate__animated animate__slideInRight">
+                <h4 class="send-form__head">Оставьте запрос на подбор техники
+                    Наши специалисты ответят Вам в течение одного рабочего дня
+                    </h4>
+                <form action="" id="send-form">
+                    <div class="send-form__group send-form__required">
+                        <label class="send-form__label" for="name" required>Имя</label>
+                        <input class="send-form__input"  type="text"  id="name" placeholder="Ваше имя">
+                    </div>
+                    <div class="send-form__group send-form__required">
+                        <label class="send-form__label" for="email" required>e-mail</label>
+                        <input class="send-form__input" type="email" name="email" id="email" placeholder="Ваш e-mail">
+                    </div>
+                    <div class="send-form__group">
+                        <label class="send-form__label" for="phone">Телефон</label>
+                        <input class="send-form__input" type="text" name="phone" id="phone" placeholder="Ваш номер телефона">
+                    </div class="send-form__group">
+                    <textarea class="send-form__text" name="message"  id="message" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
+                    <div class="send-form_pd">
+                        <p><span>*</span> - обязательно для заполнения</p>
+                        <p>Нажимая на кнопку отправить Вы соглашаетесь на обработку Ваших персональных данных. <a class="send-form__policy" href="policy.html" target="blank">Политика.</a></p>
+                    </div>
+                    <div>
+                        <button class="send-form__btn" id="send-form-button">ОТПРАВИТЬ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACTS -->
+    <section class="contacts">
         <div class="container">
-            <h3 class="section-head section-head__margin contacts__head">Контакты</h3>
-            <div class="col-2 column">
-                <div class="contact-details wow animate__animated animate__slideInLeft">
-                    <ul class="contact-details__list">
-                        <li class="contact-details__list-item"><a href=""><i class="fas fa-envelope fas_mr"></i>sales@broker-bt.ru</a></li>
-                        <li class="contact-details__list-item"><a href="tel:+79063596699"><i class="fas fa-phone-square-alt fas_mr"></i>+79063596699</a></li>
-                        <li class="contact-details__list-item contact-details__list-item_mb">
-                            <a href="https://telegram.me/+79063596699" target="_balnk"><i class="fab fa-telegram fab__big"></i></a>
-                            <a href="https://wa.me/+79063596699" target="_blank"><i class="fab fa-whatsapp fab__big"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="contact-from wow animate__animated animate__slideInRight">
-                    <h4 class="contact-from__head">Задайте вопрос</h4>
-                    <form action="" id="contact-from">
-                        <div class="contact-from__group contact-from__required">
-                            <label class="contact-from__label" for="name" required>Имя</label>
-                            <input class="contact-from__input"  type="text"  id="name" placeholder="Ваше имя">
-                        </div>
-                        <div class="contact-from__group contact-from__required">
-                            <label class="contact-from__label" for="email" required>e-mail</label>
-                            <input class="contact-from__input" type="email" name="email" id="email" placeholder="Ваш e-mail">
-                        </div>
-                        <div class="contact-from__group">
-                            <label class="contact-from__label" for="phone">Телефон</label>
-                            <input class="contact-from__input" type="text" name="phone" id="phone" placeholder="Ваш номер телефона">
-                        </div class="contact-from__group">
-                        <textarea class="contact-from__text" name="message"  id="message" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
-                        <div class="contact-from_pd">
-                            <p><span>*</span> - обязательно для заполнения</p>
-                            <p>Нажимая на кнопку отправить Вы соглашаетесь на обработку Ваших персональных данных. <a class="contact-from__policy" href="policy.html" target="blank">Политика.</a></p>
-                        </div>
-                        <div>
-                            <button class="contact-from__btn" id="contact-from-button">ОТПРАВИТЬ</button>
-                        </div>
-                    </form>
-                </div>
+            <div class="contact-details wow animate__animated animate__slideInLeft">
+                <ul class="contact-details__list">
+                    <li class="contact-details__list-item"><a href=""><i class="fas fa-envelope fas_mr"></i>sales@broker-bt.ru</a></li>
+                    <li class="contact-details__list-item"><a href="tel:+79063596699"><i class="fas fa-phone-square-alt fas_mr"></i>+79063596699</a></li>
+                    <li class="contact-details__list-item contact-details__list-item_mb">
+                        <a href="https://telegram.me/+79063596699" target="_balnk"><i class="fab fa-telegram fab__big"></i></a>
+                        <a href="https://wa.me/+79063596699" target="_blank"><i class="fab fa-whatsapp fab__big"></i></a>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
