@@ -1,0 +1,42 @@
+@import "/node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    width: 100%;
+    background-color: rgba($color: #000000, $alpha: .3);
+}
+.col-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-list{
+    font-weight: 300;
+    font-size: 2rem;
+    display: flex;
+}
+.nav-list__link{
+    display: inline-block;
+    padding: 20px;
+    transition: all .2s ease-in-out;
+    &:hover{
+        background-color: rgba($color: #000000, $alpha: .3);
+    }
+}
+.hamburger{
+    display: none;
+}
+.logo{
+    width: 130px;
+}
+.logo__img{
+    width: 100%;
+}
+
+

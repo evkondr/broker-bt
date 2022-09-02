@@ -1,0 +1,29 @@
+$theme-color-1: #fff;
+$theme-color-2: dimgrey;
+$hamburger-layer-color: #fff;
+$theme-font-family: 'Roboto', sans-serif;
+
+@mixin transition($el:all, $time: .2s, $func:ease-in-out) {
+    transition: $el $time $func;
+}
+
+%lines{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    display: block;
+    background-color: $theme-color-1;
+    box-shadow: 1px 1px 9px 4px;
+}
+%field{
+    width: 100%;
+    color: $theme-color-2;
+    font-size: 1.5rem;
+    font-weight: 100;
+    border: 0;
+    margin: 1rem 0;
+    padding: 2rem 1rem;
+    outline: none;
+}

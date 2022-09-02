@@ -1,0 +1,23 @@
+.brands{
+    padding-top: 4rem;
+    padding-bottom: 10rem;
+    overflow: hidden;
+}
+.brands-wrap{
+    padding-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.brands-item{
+    width: 250px;
+    padding: 0 2rem;
+}
+.brands-item__img{
+    width: 100%;
+}
+.slick-track{
+    display: flex;
+    align-items: center;
+}
