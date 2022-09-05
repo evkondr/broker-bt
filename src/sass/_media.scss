@@ -9,7 +9,8 @@
         position: fixed;
         top: 0;
         width: 100%;
-        background-color: rgb(46 46 46)
+        background-color: rgb(46 46 46);
+        z-index: 10000;
     }
     .nav-list{
         position: fixed;
@@ -48,6 +49,9 @@
     .about-goal{
         margin: 2rem 0;
         text-align: center;
+    }
+    .send-form__wrap{
+        width: 90%;
     }
     .contact{
         text-align: center;

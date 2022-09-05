@@ -1,5 +1,16 @@
-
+.contacts{
+    position: relative;
+    background: url("../images/map.JPG") center no-repeat;
+    background-size: cover;
+    padding: 5rem 0;
+    color: $theme-color-2;
+}
+.contacts_filter{
+    background-color: rgba($color: rgb(255, 255, 255), $alpha: .8)!important;
+}
 .contact-details__list{
+    position: relative;
+    z-index: 1000;
     font-size: 3rem;
 }
 .contact-details__list-item{
@@ -16,7 +27,17 @@
 .fas_mr{
     margin-right: 1rem;
 }
-
+.fa-whatsapp{
+    color: rgb(0,194,152);
+}
+.fa-telegram{
+    color: rgb(48,163,230);
+}
 .contact-details{
+    padding: 0 2rem;
     flex: 1;
+}
+.contact-details_font{
+    font-size: 2rem;
+    text-align: right;
 }

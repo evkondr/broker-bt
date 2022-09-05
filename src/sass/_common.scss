@@ -9,3 +9,21 @@
 .section-head__margin{
     margin-bottom: 4rem;
 }
+.col-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.filter{
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: .7);
+}
+.container__column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -8,6 +8,7 @@
 @import "./contacts";
 @import "./brands";
 @import "./common";
+@import "./footer";
 
 @import "./media";
 *{
@@ -23,6 +24,8 @@ a{
     color: inherit;
 }
 .container{
+    position: relative;
+    z-index: 2000;
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 15px;

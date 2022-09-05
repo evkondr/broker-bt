@@ -59,7 +59,7 @@ const validateForm = () => {
     inputEmail = document.getElementById('email'),
     inputPhone = document.getElementById('phone'),
     inputText = document.getElementById('message'),
-    submitBtn = document.getElementById('contact-from-button'),
+    submitBtn = document.getElementById('send-form-button'),
     isEmail = false, isName = false, isPhone = true;
     
     let toggleSubmit = () => {
@@ -77,10 +77,10 @@ const validateForm = () => {
     submitBtn.setAttribute('disabled', true);
     let checkInput = (element, reg) => {
         if(!reg.test(element.value)){
-            element.classList.add('contact-from_validate')
+            element.classList.add('send-form_validate')
             return false
         }else{
-            element.classList.remove('contact-from_validate')
+            element.classList.remove('send-form_validate')
             return true
             
         }

@@ -42,6 +42,7 @@
                         <li class="nav-list__item"><a href="#about" class="nav-list__link">О проекте</a></li>
                         <li class="nav-list__item"><a href="#brands" class="nav-list__link">Бренды</a></li>
                         <li class="nav-list__item"><a href="#send-form" class="nav-list__link">Подбор</a></li>
+                        <li class="nav-list__item"><a href="#contacts" class="nav-list__link">Контакты</a></li>
                     </ul>
                 </nav>
             </div>
@@ -141,7 +142,7 @@
     <!-- SEND FORM -->
     <section class="send-form" id="send-form">
         <div class="filter"></div>
-        <div class="container send-form__container">
+        <div class="container container__column">
             <h3 class="section-head section-head__margin send-form__head">Подбор техники</h3>
             <div class="send-form__wrap wow animate__animated animate__slideInRight">
                 <h4 class="send-form__head">Оставьте запрос на подбор техники
@@ -165,7 +166,7 @@
                         <p><span>*</span> - обязательно для заполнения</p>
                         <p>Нажимая на кнопку отправить Вы соглашаетесь на обработку Ваших персональных данных. <a class="send-form__policy" href="policy.html" target="blank">Политика.</a></p>
                     </div>
-                    <div>
+                    <div class="send-form__btn-group">
                         <button class="send-form__btn" id="send-form-button">ОТПРАВИТЬ</button>
                     </div>
                 </form>
@@ -173,19 +174,42 @@
         </div>
     </section>
     <!-- CONTACTS -->
-    <section class="contacts">
+    <section class="contacts" id="contacts">
+        <div class="filter contacts_filter"></div>
         <div class="container">
-            <div class="contact-details wow animate__animated animate__slideInLeft">
-                <ul class="contact-details__list">
-                    <li class="contact-details__list-item"><a href=""><i class="fas fa-envelope fas_mr"></i>sales@broker-bt.ru</a></li>
-                    <li class="contact-details__list-item"><a href="tel:+79063596699"><i class="fas fa-phone-square-alt fas_mr"></i>+79063596699</a></li>
-                    <li class="contact-details__list-item contact-details__list-item_mb">
-                        <a href="https://telegram.me/+79063596699" target="_balnk"><i class="fab fa-telegram fab__big"></i></a>
-                        <a href="https://wa.me/+79063596699" target="_blank"><i class="fab fa-whatsapp fab__big"></i></a>
-                    </li>
-                </ul>
+            <h3 class="section-head section-head__margin">Контакты</h3>
+            <div class="col-2 column">
+                <div class="contact-details wow animate__animated animate__slideInLeft">
+                    <ul class="contact-details__list contact-details_font">
+                        <li class="contact-details__list-item">ИП Назаров Александр Сергеевич</li>
+                        <li class="contact-details__list-item">ИНН 525714908844</li>
+                        <li class="contact-details__list-item">ОГРНИП 322527500096924</li>
+                        <li class="contact-details__list-item">АО “ТИНЬКОФФ БАНК”</li>
+                        <li class="contact-details__list-item">Р/СЧ 40802810900003666191</li>
+                        <li class="contact-details__list-item">К/CЧ 30101810145250000974</li>
+                        <li class="contact-details__list-item">ИНН 7710140679</li>
+                        <li class="contact-details__list-item">БИК 044525974 </li>
+                    </ul>
+                </div>
+                <div class="contact-details wow animate__animated animate__slideInRight">
+                    <ul class="contact-details__list">
+                        <li class="contact-details__list-item"><a href=""><i class="fas fa-envelope fas_mr"></i>sales@broker-bt.ru</a></li>
+                        <li class="contact-details__list-item"><a href="tel:+79063596699"><i class="fas fa-phone-square-alt fas_mr"></i>+79063596699</a></li>
+                        <li class="contact-details__list-item contact-details__list-item_mb">
+                            <a href="https://telegram.me/+79063596699" target="_balnk"><i class="fab fa-telegram fab__big"></i></a>
+                            <a href="https://wa.me/+79063596699" target="_blank"><i class="fab fa-whatsapp fab__big"></i></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
+    <footer class="footer">
+        <div class="container container__footer">
+            <div class="logo">
+                <img src="./images/Logo (4).png" alt="" class="logo__img">
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
