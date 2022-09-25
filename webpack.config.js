@@ -9,7 +9,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'main.js',
+        filename: 'main-[hash].js',
         clean: true,
         assetModuleFilename: 'assets/[hash][ext][query]',
     },
@@ -51,7 +51,7 @@ module.exports = {
             filename: 'policy.html'
         }),
         new MiniCssExtractPlugin({
-            filename: '[name].css',
+            filename: '[name]-[hash].css',
         }),
         new webpack.ProvidePlugin({
             $: 'jquery',
